@@ -1,0 +1,24 @@
+{
+  "name": "webpack-dependency-tree",
+  "version": "0.0.1",
+  "description": "Builds a dependency tree from webpack stats",
+  "author": "Alexandre Kirszenberg <alexandre.kirszenberg@gmail.com>",
+  "keywords": [
+    "webpack",
+    "tree",
+    "graph",
+    "dependency",
+    "module"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/botify-labs/webpack-dependency-tree.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "archy": "^1.0.0",
+    "chalk": "^1.0.0",
+    "enhanced-resolve": "^0.8.4"
+  }
+}
