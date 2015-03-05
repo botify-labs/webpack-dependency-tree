@@ -53,9 +53,9 @@ exports.fromStats = function buildTree(stats, opts) {
 
       // Retrieve the child module version from its descriptor file (package.json, bower.json, ...)
       var packageVersion = 'unknown';
-      for (var j = 0; j < packageDescriptors.length; j++) {
+      for (var j = 0; j < opts.packageDescriptors.length; j++) {
         try {
-          packageVersion = require(packagePath + packageDescriptors[j]).version;
+          packageVersion = require(packagePath + opts.packageDescriptors[j]).version;
           break;
         } catch (e) {
           // do nothing
