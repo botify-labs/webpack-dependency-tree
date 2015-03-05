@@ -1,6 +1,6 @@
 {
   "name": "webpack-dependency-tree",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Builds a dependency tree from webpack stats",
   "author": "Alexandre Kirszenberg <alexandre.kirszenberg@gmail.com>",
   "keywords": [
