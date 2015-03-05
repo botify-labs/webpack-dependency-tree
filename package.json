@@ -19,6 +19,6 @@
   "dependencies": {
     "archy": "^1.0.0",
     "chalk": "^1.0.0",
-    "enhanced-resolve": "^0.8.4"
+    "enhanced-resolve": "~0.4.12"
   }
 }
