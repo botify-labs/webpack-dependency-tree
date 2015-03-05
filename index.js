@@ -4,6 +4,11 @@ var archy = require('archy');
 var chalk = require('chalk');
 var resolve = require('enhanced-resolve');
 
+// From http://stackoverflow.com/a/6969486/969302
+function escapeRegExp(str) {
+  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+}
+
 exports.fromStats = function buildTree(stats, opts) {
   opts = opts || {};
   opts.packageDescriptors = opts.packageDescriptors || ['package.json', 'bower.json', 'component.json'];
