@@ -15,7 +15,7 @@ exports.fromStats = function buildTree(stats, opts) {
 
   // Build a module dependency tree
   var tree = {};
-  stats.modules.forEach(function(mod) {
+  stats.toJson({modules: true}).modules.forEach(function(mod) {
     // Ignore origin modules
     if (mod.name.indexOf('~') === -1) {
       return;
